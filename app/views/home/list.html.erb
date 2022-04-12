@@ -1,0 +1,32 @@
+
+<br>
+<table class="table-primary" style="width:50%" >
+<tbody >Student Details are </tbody>
+<thead>
+<tr >
+    <th scope="row">ID</th>
+    <th >NAME</th>
+    <th >BRANCH</th>
+    <th >PHNO</th>
+    <th >ADDRESS</th>
+    <th >EMAIL</th>
+    <th >ACTION</th>
+</tr>
+</thead>
+<tbody>
+<% @student.each do |stu|%>
+<tr>
+    <td ><%=stu.id%></td>
+    <td ><%= stu.name%></td>
+    <td ><%= stu.branch%></td>
+    <td ><%= stu.phno%></td>
+    <td ><%= stu.address%></td>
+    <td ><%= stu.email%></td>
+    <td><a href="/modify/<%= stu.id%>">Update</a>
+        <a href="/delete/<%= stu.id%>">Delete</a></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+
+

@@ -1,0 +1,20 @@
+
+<hr>
+<div style='text-align:center'>
+<h3>Registration</h3>
+<form action="/create" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<label>Name :</label>
+<input type="text" name="sname" placeholder="enter the name"><br><br>
+<label>Branch:</label>
+<input type="text" name="sbranch" placeholder="enter the branch"><br><br>
+<label>Phno:</label>
+<input type="text" name="sphno" placeholder="enter the phno"><br><br>
+<label>Address:</label>
+<input type="text" name="saddress" placeholder="enter the address"><br><br>
+<label>Email:</label>
+<input type="text" name="smail" placeholder="enter the email"><br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Clear">
+</form>
+</div> 
